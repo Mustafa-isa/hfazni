@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -47,26 +48,26 @@ const Header: React.FC = () => {
             {[
               { name: "الرئسيه", href: "/" },
               { name: "الاطفال", href: "/kids" },
-              { name: "الاعمال", href: "/business" },
+              { name: "من نحن", href: "/about" },
               { name: "الاسئله الشائعه", href: "/faq" },
-              { name: "المدونه", href: "/blog" },
+              { name: "المعلمين والمعلمات", href: "/teachers" },
             ].map((item, index) => (
               <motion.li
                 key={index}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   style={{
                     fontFamily: " 'Almarai', sans-serif",
                   }}
-                  className={`transition-colors font-medium cursor-pointer text-xl ${
-                    scrolled ? "text-black" : "text-white"
+                  className={`transition-colors font-bold cursor-pointer text-xl ${
+                    scrolled ? "text-mainText" : "text-white"
                   } hover:underline`}
                 >
                   {item.name}
-                </a>
+                </Link>
               </motion.li>
             ))}
           </ul>
@@ -100,7 +101,7 @@ const Header: React.FC = () => {
               exit="exit"
               variants={menuVariants}
             >
-              <ul className="space-y-4 text-right">
+              <ul className="space-y-4  text-right">
                 {[
                   { name: "الرئسيه", href: "/" },
                   { name: "الاطفال", href: "/kids" },
@@ -113,9 +114,9 @@ const Header: React.FC = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <a href={item.href} className="text-black">
+                    <Link to={item.href} className="text-mainText font-bold">
                       {item.name}
-                    </a>
+                    </Link>
                   </motion.li>
                 ))}
               </ul>

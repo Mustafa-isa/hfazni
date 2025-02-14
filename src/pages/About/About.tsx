@@ -6,7 +6,7 @@ import ServiceCollection from "../../components/common/NewCollection/NewCollecti
 function About() {
   return (
     <div className="mt-28">
-      <OverLay title="About" />
+      <OverLay title="من نحن" />
 
       <AboutUsSection />
       <OurMainFocus /> 
