@@ -5,11 +5,12 @@ import About from "./pages/About/About";
 
 import Header from "./components/common/NavBar/NavBar";
 import Teachers from "./pages/Teachers/Teachers";
+import Child from "./pages/Child/Child";
 
 function App() {
   return (
-    <div className="relative"> 
-    <Header />
+    <div className="relative">
+      <Header />
       <Router>
         <div className="flex flex-col min-h-screen">
           {/* Main Content */}
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/teachers" element={<Teachers />} />
+              <Route path="/child" element={<Child />} />
             </Routes>
           </main>
 

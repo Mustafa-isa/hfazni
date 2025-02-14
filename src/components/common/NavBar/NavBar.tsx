@@ -57,8 +57,8 @@ const Header: React.FC = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               >
-                <Link
-                  to={item.href}
+                <a
+                  href={item.href}
                   style={{
                     fontFamily: " 'Almarai', sans-serif",
                   }}
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
                   } hover:underline`}
                 >
                   {item.name}
-                </Link>
+                </a>
               </motion.li>
             ))}
           </ul>
@@ -114,9 +114,9 @@ const Header: React.FC = () => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <Link to={item.href} className="text-mainText font-bold">
+                    <a href={item.href} className="text-mainText font-bold">
                       {item.name}
-                    </Link>
+                    </a>
                   </motion.li>
                 ))}
               </ul>
