@@ -31,10 +31,10 @@ const OverLay: React.FC<OverLayProps> = ({ title }) => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-    > 
-    <div className="bg-black opacity-50 z-[-1] absolute top-0 left-0 right-0 bottom-0"></div>
+    >
+      <div className="bg-black opacity-50  absolute top-0 left-0 right-0 bottom-0"></div>
       <motion.div
-        className="w-[90%] lg:w-[60%] mx-auto text-center lg:text-right"
+        className="w-[90%] lg:w-[60%]  relative  z-50 mx-auto text-center lg:text-right"
         variants={textVariants}
       >
         <div className="z-50">

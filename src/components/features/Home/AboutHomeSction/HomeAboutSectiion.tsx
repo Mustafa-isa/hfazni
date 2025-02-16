@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import AboutCard from "./AboutCard";
-
+import img4 from "../../../../assets/images/done-plus/home1p.svg";
 import { FaPrayingHands, FaRegLightbulb } from "react-icons/fa";
 import { FaBookQuran } from "react-icons/fa6";
 
@@ -18,11 +18,9 @@ export default function HomeAboutSection() {
         }}
       >
         <img
-          src={
-            "https://moddakir.com/wp-content/uploads/2023/04/track-time-copy2.webp"
-          }
-          alt="about"
-          className=" "
+          className=" w-96 h-96 lg:xl:w-[700px] lg:xl:h-[700px]"
+          src={img4}
+          alt="Hero"
         />
       </motion.div>
 
@@ -52,20 +50,20 @@ export default function HomeAboutSection() {
         >
           <AboutCard
             icon={<FaBookQuran />}
-            title="تعلم القرآن الكريم"
+            title="تعليم القرآن الكريم"
             description="استمتع بتجربة تعليمية مميزة لتعلم تلاوة القرآن الكريم بأحكام التجويد الصحيحة مع قراء معتمدين."
           />
 
           <AboutCard
             icon={<FaRegLightbulb />}
-            title="تفسير الآيات"
-            description="اكتشف معاني الآيات الكريمة من خلال تفسيرات موثوقة تساعدك على فهم الرسالة الإلهية بشكل أعمق."
+            title="تفسير بعض الكلمات الصعبه"
+            description="تفسير بعض الكلمات الصعبه لتسهيل الحفظ ."
           />
 
           <AboutCard
             icon={<FaPrayingHands />}
-            title="الأذكار اليومية"
-            description="حافظ على وردك اليومي من الأذكار النبوية مع تذكيرات وتنبيهات تساعدك على الالتزام بها."
+            title="يعمل علي مدار الساعه"
+            description="يدعم مختلف الاعمار والمستويات "
           />
         </motion.div>
       </motion.div>

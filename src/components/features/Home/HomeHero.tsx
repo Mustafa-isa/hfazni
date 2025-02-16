@@ -1,43 +1,41 @@
-import {
-  FaFacebook,
-  FaHome,
-  FaInstagram,
-  FaLinkedin,
-  FaPauseCircle,
-  FaGooglePlay,
-  FaApple,
-} from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
-import WavyText from "../../common/CurvyText/CurveText";
+import img1 from "../../../assets/images/done-plus/Frame 1.png";
+import img2 from "../../../assets/images/home.png";
 
 function HomeHero() {
   return (
     <div
       className="absolute top-0 h-[90vh] w-full overflow-hidden"
       style={{
-        backgroundImage: `url(${"https://moddakir.com/wp-content/uploads/2023/04/32515-copy-2-scaled.jpg"})`,
+        backgroundImage: `url(${img1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="relative z-10 bg-primary/70 w-full h-full flex flex-col md:flex-row-reverse items-center justify-center gap-12 text-center md:text-left text-white py-12 px-6">
+      <div className="relative z-10 bg-primary/70 w-full h-full flex flex-col md:flex-row-reverse items-center justify-center gap-12 text-center md:text-left text-white py-4 px-6">
         {/* Text and Content Layer */}
         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left">
           {/* Social Media Icons */}
           <motion.div
-            className="flex items-center gap-3 flex-col"
+            className="flex items-center gap-3  "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
             <div className="bg-white p-2 rounded-full">
+              <a
+                href="https://wa.me/01556305800" 
+                // target="_blank" // Replace with your WhatsApp number 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+                <FaWhatsapp size={25} className="text-teal-500 font-thin" />
+              </a>
+            </div>
+            <div className="bg-white p-2 rounded-full">
               <FaFacebook size={25} className="text-teal-500 font-thin" />
-            </div>
-            <div className="bg-white p-2 rounded-full">
-              <FaLinkedin size={25} className="text-teal-500 font-thin" />
-            </div>
-            <div className="bg-white p-2 rounded-full">
-              <FaInstagram size={25} className="text-teal-500 font-thin" />
             </div>
           </motion.div>
 
@@ -47,24 +45,20 @@ function HomeHero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="flex gap-1 mb-12 items-center justify-center md:justify-start">
-              <FaHome className="text-primary" />
-            </div>
-
-            <h1 className="text-white mb-2 font-bold text-5xl">
-              <WavyText
+            <h1 className="text-white mb-2 font-bold text-sm lg:text-3xl xl:text-4xl">
+              {/* <WavyText
                 text="Hafzni"
                 delay={0.1}
                 duration={0.05}
                 replay={true}
-              />
+              /> */}
               <br />
               <span className="text-white">
                 تعلم بسهولة في جلسات فردية
                 <br />
                 مع أمهر المعلمين والمعلمات
               </span>{" "}
-              حفظني
+              في تطبيق حفظني
             </h1>
           </motion.div>
 
@@ -75,29 +69,34 @@ function HomeHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="p-5 rounded-full shadow">
+            {/* <div className="p-5 rounded-full shadow">
               <FaPauseCircle
                 size={25}
                 className="text-secondaryTextColor font-thin"
               />
-            </div>
+            </div> */}
           </motion.div>
 
           {/* App Download Buttons */}
           <motion.div
-            className="flex gap-6 mt-6"
+            className="flex gap-6 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <button className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700">
-              <FaGooglePlay size={20} />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.rmoztec.hafazny.quran"
+              className="flex items-center gap-2 p-2 lg:px-6 lg:py-3 bg-green-600 text-white rounded-full hover:bg-green-700"
+            >
               <span>Google Play</span>
-            </button>
-            <button className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-700">
+            </a>
+            {/* <a
+              href="https://play.google.com/store/apps/details?id=com.rmoztec.hafazny.quran"
+              className="flex items-center gap-2 p-2 lg:px-6 lg:py-3 bg-black text-white rounded-full hover:bg-gray-700"
+            >
               <FaApple size={20} />
               <span>App Store</span>
-            </button>
+            </a> */}
           </motion.div>
         </div>
 
@@ -114,8 +113,8 @@ function HomeHero() {
           className="flex-shrink-0"
         >
           <img
-            className=""
-            src="https://moddakir.com/wp-content/uploads/2023/04/single-welcome1-copy.webp"
+            className=" w-72 h-72  md:w-96 md:h-96 lg:xl:w-[600px] lg:xl:h-[500px]"
+            src={img2}
             alt="Hero"
           />
         </motion.div>

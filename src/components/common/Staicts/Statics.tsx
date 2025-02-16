@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaUsers, FaBook, FaChalkboardTeacher } from "react-icons/fa";
+import bg from "../../../assets/images/done-plus/Frame 1.png";
 
 type StatProps = {
   title: string;
@@ -44,8 +45,9 @@ const StatsSection: React.FC = () => {
   return (
     <div
       style={{
-        backgroundImage:
-          "url(https://moddakir.com/wp-content/uploads/2023/02/325152-copy-scaled.jpg?id=1398)",
+        backgroundImage: `url(${bg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
       className="relative bg-gradient-to-r my-20 py-16 px-8 text-white text-center"
     >
@@ -53,9 +55,17 @@ const StatsSection: React.FC = () => {
       <div className="relative z-50">
         <h2 className="text-3xl font-bold mb-8">إحصائيات تطبيق حفظني</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <StatCounter title="عدد المستخدمين" value={15000} icon={<FaUsers />} />
+          <StatCounter
+            title="عدد المستخدمين"
+            value={15000}
+            icon={<FaUsers />}
+          />
           <StatCounter title="الدروس المتاحة" value={200} icon={<FaBook />} />
-          <StatCounter title="المعلمون المتاحون" value={50} icon={<FaChalkboardTeacher />} />
+          <StatCounter
+            title="المعلمون المتاحون"
+            value={50}
+            icon={<FaChalkboardTeacher />}
+          />
         </div>
       </div>
     </div>

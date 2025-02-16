@@ -27,9 +27,12 @@ const Card: React.FC<CardProps> = ({
       </div>
       <h2 className="text-lg font-semibold mt-4">{title}</h2>
       <p className="text-gray-600 mt-2">{description}</p>
-      <button className="mt-4 bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+      <a
+        href="https://play.google.com/store/apps/details?id=com.rmoztec.hafazny.quran"
+        className="mt-4 block  bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+      >
         {buttonText}
-      </button>
+      </a>
     </motion.div>
   );
 };
@@ -42,7 +45,7 @@ const CardList: React.FC = () => {
     {
       icon: FaQuran,
       title: "تلاوة القرآن",
-      description: "استمع إلى التلاوة بأصوات متعددة",
+      description: "استمع الي  تلاوه القران با اصوات متميزه",
       buttonText: "استمع الآن",
     },
     {

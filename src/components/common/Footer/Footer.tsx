@@ -43,31 +43,31 @@ const Footer = () => {
         </p>
         <ContactInfo
           icon={<FaLocationArrow />}
-          text="العنوان: شارع 25، المنطقة التعليمية"
+          text="العنوان: بحيره مركز دمنهور"
         />
-        <ContactInfo icon={<FaPhone />} text="+0120-6115962" />
-        <ContactInfo icon={<MdEmail />} text="hafzni.support@gmail.com" />
+        <ContactInfo icon={<FaPhone />} text="01556305800" />
+        <ContactInfo icon={<MdEmail />} text="hafzny.quran@gmail.com" />
         <div className="flex flex-col items-center gap-3 mt-4">
           <a
-            href="#"
+            href="https://play.google.com/store/apps/details?id=com.rmoztec.hafazny.quran"
             className="bg-black text-white flex items-center px-4 py-2 rounded-md shadow-lg"
           >
             <FaGooglePlay className="mr-2" /> تحميل من Google Play
           </a>
-          <a
+          {/* <a
             href="#"
             className="bg-black text-white flex items-center px-4 py-2 rounded-md shadow-lg"
           >
             <FaApple className="mr-2" /> تحميل من App Store
-          </a>
+          </a> */}
         </div>
         <div className="flex justify-center gap-4 mt-6">
-          <SocialLink
+          {/* <SocialLink
             href="#"
             icon={<FaYoutube className="text-red-600" size={25} />}
             label="YouTube"
-          />
-          <SocialLink
+          /> */}
+          {/* <SocialLink
             href="#"
             icon={<FaTwitter className="text-blue-500" size={25} />}
             label="Twitter"
@@ -76,16 +76,16 @@ const Footer = () => {
             href="#"
             icon={<FaTiktok className="text-black" size={25} />}
             label="TikTok"
-          />
+          /> */}
           <SocialLink
-            href="#"
+            href="https://www.facebook.com/share/1H2TycnAs1/"
             icon={<FaFacebook className="text-blue-700" size={25} />}
             label="Facebook"
           />
           <SocialLink
-            href="#"
-            icon={<FaInstagram className="text-pink-600" size={25} />}
-            label="Instagram"
+            href="https://wa.me/01556305800" // Replace with your WhatsApp number
+            icon={<FaInstagram className="text-green-600" size={25} />}
+            label="WhatsApp"
           />
         </div>
       </div>

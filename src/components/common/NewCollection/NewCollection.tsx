@@ -18,17 +18,17 @@ const items: FocusItemProps[] = [
   {
     img: img1,
     title: "تعليم القرآن الكريم",
-    description: "نوفر بيئة تعليمية حديثة وممتعة لحفظ وتلاوة القرآن الكريم."
+    description: "نوفر بيئة تعليمية حديثة وممتعة لحفظ وتلاوة القرآن الكريم.",
   },
   {
     img: img2,
-    title: "تحفيظ متدرج",
-    description: "أساليب مبتكرة لمساعدة الأطفال على الحفظ والمراجعة بسهولة."
+    title: "تحفيظ تسلسلي",
+    description: "أساليب مبتكرة لمساعدة الأطفال على الحفظ والمراجعة بسهولة.",
   },
   {
     img: img3,
     title: "إشراف متخصص",
-    description: "مدرسون مؤهلون للإشراف على تقدم الأطفال في الحفظ والتجويد."
+    description: "مدرسون مؤهلون للإشراف على تقدم الأطفال في الحفظ والتجويد.",
   },
 ];
 
@@ -51,15 +51,17 @@ const FocusItem: React.FC<FocusItemProps> = ({ img, title, description }) => (
     <div className="px-4 py-4">
       <h3 className="text-mainText text-lg font-semibold mb-3">{title}</h3>
       <p className="text-secondaryTextColor text-sm mb-4">{description}</p>
-      
+
       {/* وقت الجلسة وزر التفاصيل */}
       <div className="flex items-center justify-between text-sm text-secondaryTextColor">
         <div className="flex items-center space-x-2">
           <FaClock className="text-primary" />
-          <span>من 10:00 صباحًا إلى 4:00 مساءً</span>
         </div>
         <button className="text-primary font-medium hover:underline">
-          التفاصيل
+          <a href="https://play.google.com/store/apps/details?id=com.rmoztec.hafazny.quran">
+            {" "}
+            التفاصيل
+          </a>
         </button>
       </div>
     </div>

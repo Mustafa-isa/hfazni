@@ -34,7 +34,8 @@ export default function AboutUsSection() {
         <p className="text-secondaryTextColor mt-6">
           يوفر تطبيق حفظني طريقة سهلة ومبتكرة لحفظ وتلاوة القرآن الكريم.
           <br />
-          يتضمن ميزات مثل التكرار الذكي، الاستماع إلى قرّاء مختلفين، وتقييم الأداء.
+          يوفرلك تجربه خاصه ومنفرده لتعلم التلاوه والحفظ مع افضل المعلمين
+          والمعلمات
           <br />
           استمتع بتجربة تعليمية مميزة تساعدك على تحسين مستواك في التلاوة والحفظ.
         </p>
@@ -51,11 +52,15 @@ export default function AboutUsSection() {
         >
           <div className="bg-primary p-6 rounded-lg text-white text-center w-full lg:w-[45%]">
             <h2 className="text-xl font-bold">تعلم التلاوة</h2>
-            <p className="mt-2">استمع للقرّاء وأتقن التجويد بسهولة.</p>
+            <p className="mt-2">استمع للمعلم والمعملين وأتقن الحفظ بسهولة.</p>
           </div>
-          <div className="bg-secondary p-6 rounded-lg text-white text-center w-full lg:w-[45%]">
-            <h2 className="text-xl font-bold">نظام التكرار الذكي</h2>
-            <p className="mt-2">طريقة حديثة تساعدك على تثبيت الحفظ بسرعة.</p>
+          <div className="bg-white shadow-lg p-6 rounded-lg text-white text-center w-full lg:w-[45%]">
+            <h2 className="text-xl font-bold text-primary ">
+              نظام التكرار الذكي
+            </h2>
+            <p className="mt-2 text-primary">
+              طريقة حديثة تساعدك على تثبيت الحفظ بسرعة.
+            </p>
           </div>
         </motion.div>
       </motion.div>

@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Header from "./components/common/NavBar/NavBar";
 import Teachers from "./pages/Teachers/Teachers";
 import Child from "./pages/Child/Child";
+import Questiuons from "./pages/Questiuons/Questiuons";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/teachers" element={<Teachers />} />
-              <Route path="/child" element={<Child />} />
+              <Route path="/kids" element={<Child />} />
+              <Route path="/faq" element={<Questiuons />} />
             </Routes>
           </main>
 
