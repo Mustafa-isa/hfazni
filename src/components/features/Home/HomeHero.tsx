@@ -26,20 +26,20 @@ function HomeHero() {
           >
             <div className="bg-white p-2 rounded-full">
               <a
-                href="https://wa.me/01556305800" 
-                // target="_blank" // Replace with your WhatsApp number 
-                rel="noopener noreferrer" 
+                href="https://wa.me/201556305800"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <FaWhatsapp size={25} className="text-teal-500 font-thin" />
               </a>
             </div>
             <div className="bg-white p-2 rounded-full">
-              <FaFacebook size={25} className="text-teal-500 font-thin" />
+              <a href="https://www.facebook.com/share/1A5Qp1QZpV/">
+                <FaFacebook size={25} className="text-teal-500 font-thin" />
+              </a>{" "}
             </div>
           </motion.div>
 
-          {/* Title and Description */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}

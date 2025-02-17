@@ -4,10 +4,10 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsAppButton = () => {
   return (
     <motion.a
-      href="https://wa.me/01556305800" // Replace with your WhatsApp number
-      target="_blank"
+    href="https://wa.me/201556305800" // Updated with Egypt's country code (+20)
+    target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg"
+      className="fixed z-[100000] bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg"
       initial={{ y: 0 }}
       animate={{ y: [0, -20, 0] }}
       transition={{

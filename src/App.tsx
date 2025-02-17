@@ -7,6 +7,7 @@ import Header from "./components/common/NavBar/NavBar";
 import Teachers from "./pages/Teachers/Teachers";
 import Child from "./pages/Child/Child";
 import Questiuons from "./pages/Questiuons/Questiuons";
+import WhatsAppButton from "./components/common/Whatsapp/Whatsapp";
 
 function App() {
   return (
@@ -25,11 +26,11 @@ function App() {
             </Routes>
           </main>
 
-          {/* Footer Section */}
           <footer>
             <Footer />
           </footer>
         </div>
+        <WhatsAppButton />
       </Router>
     </div>
   );

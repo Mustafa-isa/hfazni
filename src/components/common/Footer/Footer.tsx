@@ -13,6 +13,7 @@ import {
   FaApple,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FaX } from "react-icons/fa6";
 
 const SocialLink = ({ href, icon, label }) => (
   <a
@@ -83,8 +84,19 @@ const Footer = () => {
             label="Facebook"
           />
           <SocialLink
-            href="https://wa.me/01556305800" // Replace with your WhatsApp number
+            href="https://wa.me/201556305800" // Updated with Egypt's country code (+20)
             icon={<FaInstagram className="text-green-600" size={25} />}
+            label="WhatsApp"
+          />
+
+          <SocialLink
+            href="https://x.com/hafzny0?t=4lZ8JtwO2WRL6ckul9lOPA&s=09" // Replace with your WhatsApp number
+            icon={<FaX className="text-indigo-600" size={25} />}
+            label="WhatsApp"
+          />
+          <SocialLink
+            href="https://youtube.com/channel/UCerwz923-VMEZxMi_BryL4w?si=r13QCXxpQOaRLru0" // Replace with your WhatsApp number
+            icon={<FaYoutube className="text-red-600" size={25} />}
             label="WhatsApp"
           />
         </div>

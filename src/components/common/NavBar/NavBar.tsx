@@ -52,10 +52,11 @@ const Header: React.FC = () => {
           <ul className="hidden flex-row-reverse md:flex space-x-6">
             {[
               { name: "الرئسيه", href: "/" },
+              { name: "المعلمين والمعلمات", href: "/teachers" },
+
               { name: "الاطفال", href: "/kids" },
               { name: "من نحن", href: "/about" },
               { name: "الاسئله الشائعه", href: "/faq" },
-              { name: "المعلمين والمعلمات", href: "/teachers" },
             ].map((item, index) => (
               <motion.li
                 key={index}
@@ -108,11 +109,12 @@ const Header: React.FC = () => {
             >
               <ul className="space-y-4  text-right">
                 {[
+                  { name: "الرئسيه", href: "/" },
+                  { name: "المعلمين والمعلمات", href: "/teachers" },
+
+                  { name: "الاطفال", href: "/kids" },
                   { name: "من نحن", href: "/about" },
 
-                  { name: "الرئسيه", href: "/" },
-                  { name: "الاطفال", href: "/kids" },
-                  { name: "المعلمين والمعلمات", href: "/teachers" },
                   { name: "الاسئله الشائعه", href: "/faq" },
                 ].map((item, index) => (
                   <motion.li
